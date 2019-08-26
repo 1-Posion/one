@@ -1,0 +1,162 @@
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+// .el-upload__input {
+//   display: none;
+// }
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+
+.el-menu-item, .el-submenu__title{
+  // height: 32px !important;
+  // line-height: 32px !important;
+  font-size: 12px;
+}
+
+
+// .el-textarea__inner:focus{
+//   border:  1px solid #ea8938;
+// }
+// .el-input__inner:focus{
+//   border:  1px solid #ea8938;
+// }
+// .el-select .el-input__inner:focus{
+//   border-color: #ea8938;
+// }
+// .el-select .el-input.is-focus .el-input__inner{
+//   border-color: #ea8938;
+// }
+.el-table{
+  .el-button{
+    margin-bottom:4px;
+    color: #12ABFF;
+    border:none;
+  }
+  .el-table__body-wrapper::-webkit-scrollbar{
+    display: none;
+  }
+}
+.el-table th {
+  background:#F3F5F9 !important;
+  border-bottom:none !important;
+  border-right: 2px solid #fff;
+  border-radius: 5px;
+  color: #57576F;
+}
+.el-table td {
+  border-bottom: none !important;
+}
+.el-pagination{
+  text-align: left !important;
+}
+
+.el-dialog{
+  border-radius:5px !important;
+  padding:40px;
+}
+.el-dialog__header{
+  padding: 0 !important;
+}
+.el-dialog__body{
+  padding: 20px 0 !important;
+}
+.el-dialog__footer{
+  text-align: left !important;
+  padding:10px 0 0 0 !important;
+  .el-button{
+    width: 80px;
+    height:32px;
+  }
+}
+
+// 解决日期组件与搜索框之间错位
+.el-date-editor {
+  height:28px !important;
+  padding: 0 10px !important;
+  .el-range-separator{
+    line-height:27px !important;
+  }
+}
+
+//  修改弹框內不的form表单样式
+.dialogForm{
+  .el-form-item {
+    height: 40px;
+    line-height:40px;
+    border-radius:5px;
+    background:#F9F9FB;
+    .el-form-item__label{
+      height:40px;
+      line-height: 40px;
+    }
+    .el-input__inner{
+      background:#F9F9FB;
+      height: 40px;
+      font-size:13px;
+      border:none;
+    }
+    .el-select{
+      width:100%;
+    }
+    .el-form-item__error{
+      margin-top:5px;
+      padding:0 15px;
+    }
+  }
+}
+
+// 修改聊天框的card组件样式
+.chat{
+  .el-card:last-child{
+    margin-top: 2px;
+  }
+  .el-card{
+    border:none;
+    margin-bottom: 2px;
+    .el-card__body{
+      padding:0;
+      height: 80px;
+      padding:10px;
+      display:flex;
+      img{
+        width:60px;
+        height:60px;
+      }
+      .info{
+        margin-left:5px;
+        line-height:20px;
+        font-size:14px;
+        width:calc(100% - 85px);
+        p:nth-child(2){
+          font-size:13px;
+        }
+        .info_tishi{
+          font-size: 12px;
+          color:#BCBCC5;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import './element-ui.scss';
+@import './common.scss';
+body {
+    height: 100vh;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+    font-size: 12px;
+}
+
+label {
+    font-weight: 700;
+}
+
+html {
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    width: 100vw;
+    overflow-x: scroll;
+}
+
+// body::-webkit-scrollbar {
+//     display: none;
+// }
+#app {
+    position: relative;
+    width: 100%;
+    min-width: 1440px;
+    height: 100%;
+    // overflow-x: scroll;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
